@@ -23,9 +23,9 @@
                     <td>{{i.nodemande}}</td>
                     <td>{{i.datedemande}}</td>
                     <td>{{i.dateenlevementprevu}}</td>
-                    <td>{{i.identreprise}}</td>
-                    <td>{{i.nosite}}</td>
-                    <td>{{i.idetat}}</td>
+                    <td>{{i.raisonsociale}}</td>
+                    <td>{{i.nomsite}}</td>
+                    <td>{{i.libelleetat}}</td>
                 </tr>
             </table>
         </div>
