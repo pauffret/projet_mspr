@@ -27,7 +27,7 @@
                         >
                             <hr>
                             <b-card-text>
-                                Pour une demande donnée, affichee la raison sociale de l'entreprise, la tournée
+                                Affiche la raison sociale de l'entreprise, la tournée
                                 correspondante et la quantité à récupérer pour chaque type de déchet.
                             </b-card-text>
 
@@ -73,7 +73,7 @@
                 <b-col>
                     <div id="5">
                         <b-card
-                                title="Entreprises ayant réalisé plus de demandes qu'une autre"
+                                title="Comparaison entre les entreprises"
                                 class="card mb-2"
                                 border-variant="secondary"
                         >
