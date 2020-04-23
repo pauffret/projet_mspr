@@ -2,14 +2,29 @@
     <div>
         <button @click="redirectAccueil()" type="button" class="buttonAccueil btn btn-info">Accueil</button>
         <div class="title">
-            <h2>Demandes pas encore inscrites dans une tournée</h2>
+            <h2>Demandes non inscrites dans une tournée</h2>
         </div>
         <div>
-            <ul>
-                <li v-for="(i,key) in infos" :key="key">
-                    <p>{{i}}</p>
-                </li>
-            </ul>
+            <table>
+                <tr>
+                    <th>N° demande</th>
+                    <th>Date demande</th>
+                    <th>Date enlèvement prévu</th>
+                    <th>Id entreprise</th>
+                    <th>N° site</th>
+                    <th>Id source</th>
+                    <th>Id etat</th>
+                </tr>
+                <tr v-for="(i,key) in infos" :key="key">
+                    <td>{{i.nodemande}}</td>
+                    <td>{{i.datedemande}}</td>
+                    <td>{{i.dateenlevementprevu}}</td>
+                    <td>{{i.identreprise}}</td>
+                    <td>{{i.nosite}}</td>
+                    <td>{{i.idsource}}</td>
+                    <td>{{i.idetat}}</td>
+                </tr>
+            </table>
         </div>
     </div>
 </template>
@@ -43,5 +58,20 @@
 </script>
 
 <style scoped>
-
+    h2{
+        text-align: center;
+        padding: 20px;
+    }
+    table{
+        margin: auto;
+    }
+    th{
+        color: white;
+        background-color: dodgerblue;
+    }
+    th, td{
+        border: 1px solid black;
+        padding: 20px;
+        text-align: center;
+    }
 </style>
