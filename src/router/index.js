@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
-// import Questionnaire from '../views/Questionnaire'
+import Resultat from "@/views/Resultat";
 
 Vue.use(VueRouter)
 
@@ -11,11 +11,11 @@ const routes = [
         name: 'Home',
         component: Home
     },
-    // {
-    //     path: '/questionnaire',
-    //     name: 'questionnaire',
-    //     component: Questionnaire
-    // }
+    {
+        path: '/resultat',
+        name: 'Resultat',
+        component: Resultat
+    }
 ]
 
 const router = new VueRouter({

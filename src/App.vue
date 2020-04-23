@@ -7,7 +7,7 @@
         </router-link>
       </b-navbar-brand>
     </b-navbar>
-<!--    <router-view class="container" @setUser="setUser"/>-->
+    <router-view/>
   </div>
 </template>
 
