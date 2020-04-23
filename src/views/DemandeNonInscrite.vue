@@ -10,19 +10,19 @@
                     <th>N° demande</th>
                     <th>Date demande</th>
                     <th>Date enlèvement prévu</th>
-                    <th>Id entreprise</th>
-                    <th>N° site</th>
-                    <th>Id source</th>
-                    <th>Id etat</th>
+                    <th>Nom de l'entreprise</th>
+                    <th>Nom du site</th>
+                    <th>Source</th>
+                    <th>Etat</th>
                 </tr>
                 <tr v-for="(i,key) in infos" :key="key">
                     <td>{{i.nodemande}}</td>
                     <td>{{i.datedemande}}</td>
                     <td>{{i.dateenlevementprevu}}</td>
-                    <td>{{i.identreprise}}</td>
-                    <td>{{i.nosite}}</td>
-                    <td>{{i.idsource}}</td>
-                    <td>{{i.idetat}}</td>
+                    <td>{{i.raisonsociale}}</td>
+                    <td>{{i.nomsite}}</td>
+                    <td>{{i.libellesource}}</td>
+                    <td>{{i.libelleetat}}</td>
                 </tr>
             </table>
         </div>

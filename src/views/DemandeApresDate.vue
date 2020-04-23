@@ -15,9 +15,9 @@
                     <th>N° demande</th>
                     <th>Date demande</th>
                     <th>Date enlèvement prévu</th>
-                    <th>Id de l'entreprise</th>
-                    <th>N° de site</th>
-                    <th>Id état</th>
+                    <th>Nom de l'entreprise</th>
+                    <th>Nom du site</th>
+                    <th>Etat</th>
                 </tr>
                 <tr v-for="(i,key) in infos" :key="key">
                     <td>{{i.nodemande}}</td>
