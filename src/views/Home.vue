@@ -7,7 +7,9 @@
                         <b-card
                                 title="Demandes faites après une date"
                                 class="card mb-2"
+                                border-variant="secondary"
                         >
+                            <hr>
                             <b-card-text>
                                 Affiche les demandes qui ont été faites après une date donnée saisie
                             </b-card-text>
@@ -21,7 +23,9 @@
                         <b-card
                                 title="Informations sur une demande"
                                 class="card mb-2"
+                                border-variant="secondary"
                         >
+                            <hr>
                             <b-card-text>
                                 Pour une demande donnée, affichee la raison sociale de l'entreprise, la tournée
                                 correspondante et la quantité à récupérer pour chaque type de déchet.
@@ -36,7 +40,9 @@
                         <b-card
                                 title="Quantité totale récupérée par type de déchet"
                                 class="card mb-2"
+                                border-variant="secondary"
                         >
+                            <hr>
                             <b-card-text>
                                 Affiche la quantité totale récupérée par type de déchet pour un mois/année donné.
                             </b-card-text>
@@ -52,7 +58,9 @@
                         <b-card
                                 title="Nombre de tournées par employé"
                                 class="card mb-2"
+                                border-variant="secondary"
                         >
+                            <hr>
                             <b-card-text>
                                 Affiche les employés ayant réalisé moins de tournées que le nombre saisi. Le résultat trié par le nombre
                                 de tournées réalisées.
@@ -67,7 +75,9 @@
                         <b-card
                                 title="Entreprises ayant réalisé plus de demandes qu'une autre"
                                 class="card mb-2"
+                                border-variant="secondary"
                         >
+                            <hr>
                             <b-card-text>
                                 Affiche les informations des entreprises qui ont réalisé plus de demandes que
                                 l'entreprise saisie
@@ -82,7 +92,9 @@
                         <b-card
                                 title="Demandes non inscrites"
                                 class="card mb-2"
+                                border-variant="secondary"
                         >
+                            <hr>
                             <b-card-text>
                                 Affiche les informations des demandes qui ne sont pas encore inscrites dans une
                                 tournée.
@@ -99,7 +111,9 @@
                         <b-card
                                 title="Quantité totale de déchêts par type et par site"
                                 class="card mb-2"
+                                border-variant="secondary"
                         >
+                            <hr>
                             <b-card-text>
                                 Affiche la quantité totale
                                 collectée pour un type de déchet sur une période donnée au niveau d'un site.
@@ -114,7 +128,9 @@
                         <b-card
                                 title="Quantité totale de déchêts par type pour tous les sites"
                                 class="card mb-2"
+                                border-variant="secondary"
                         >
+                            <hr>
                             <b-card-text>
                                 Affiche la quantité
                                 totale collectée pour un type de déchet sur une période donnée au niveau national.
@@ -171,11 +187,12 @@
 <style scoped>
 
     .container-grid{
-        padding-top: 5%;
+        padding-top: 2.5%;
     }
 
     .card {
         min-height: 250px;
+        box-shadow: 3px 2px #888888;
     }
 
     .btn-demande{
