@@ -3,8 +3,7 @@
         <div id="1">
             <b-card
                     title="Card Title"
-                    style="max-width: 20rem;"
-                    class="mb-2"
+                    class="card mb-2"
             >
                 <b-card-text>
                     Chercher et afficher les demandes qui ont été faites après une date donnée saisie par l’agent
@@ -15,9 +14,8 @@
         </div>
         <div id="2">
             <b-card
-                    title="Card Title"
-                    style="max-width: 20rem;"
-                    class="mb-2"
+                    title="Informations sur une demande"
+                    class="card mb-2"
             >
                 <b-card-text>
                     Pour une demande donnée, afficher la raison sociale de l'entreprise, la tournée
@@ -30,8 +28,7 @@
         <div id="3">
             <b-card
                     title="Card Title"
-                    style="max-width: 20rem;"
-                    class="mb-2"
+                    class="card mb-2"
             >
                 <b-card-text>
                     Afficher la quantité totale récupérée par type de déchet pour un mois/année donné.
@@ -42,9 +39,8 @@
         </div>
         <div id="4">
             <b-card
-                    title="Card Title"
-                    style="max-width: 20rem;"
-                    class="mb-2"
+                    title="Nombre de tournées par employé"
+                    class="card mb-2"
             >
                 <b-card-text>
                     Afficher les employés ayant réalisé moins de n tournées.Triez le résultat sur le nombre de
@@ -57,8 +53,7 @@
         <div id="5">
             <b-card
                     title="Card Title"
-                    style="max-width: 20rem;"
-                    class="mb-2"
+                    class="card mb-2"
             >
                 <b-card-text>
                     Affichez les informations de l'entreprise qui a réalisé plus de demandes que l'entreprise
@@ -70,9 +65,8 @@
         </div>
         <div id="6">
             <b-card
-                    title="Card Title"
-                    style="max-width: 20rem;"
-                    class="mb-2"
+                    title="Demandes non inscrites"
+                    class="card mb-2"
             >
                 <b-card-text>
                     Affichez les informations des demandes qui ne sont pas encore inscrites dans une tournée.
@@ -100,7 +94,7 @@
                         this.$router.push({path: "/"})
                         break;
                     case '4':
-                        this.$router.push({path: "/"})
+                        this.$router.push({path: "/nbTourneesRealisees"})
                         break;
                     case '5':
                         this.$router.push({path: "/"})
@@ -115,5 +109,7 @@
 </script>
 
 <style scoped>
-
+    .card{
+        max-width: 50rem;
+    }
 </style>
