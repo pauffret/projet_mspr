@@ -21,3 +21,8 @@
 <!--  margin-top: 60px;-->
 <!--}-->
 <!--</style>-->
+<style>
+  .navbar-expand {
+    justify-content: center !important;
+  }
+</style>

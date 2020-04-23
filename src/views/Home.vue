@@ -194,7 +194,7 @@
 
     .card {
         min-height: 250px;
-        box-shadow: 3px 2px #888888;
+        box-shadow: 3px 2px #88888875;
     }
 
     .btn-demande{
@@ -202,10 +202,11 @@
         bottom: 10px;
         left: 5%;
         width: 90%;
-        box-shadow: 3px 2px #888888;
+        box-shadow: 3px 2px #9cb5f8f7;
     }
     p{
         text-align: center;
     }
+
 
 </style>
