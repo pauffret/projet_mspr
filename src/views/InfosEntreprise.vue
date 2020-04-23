@@ -13,7 +13,6 @@
             </div>
             <table>
                 <tr>
-                    <th>Id entreprise</th>
                     <th>N° Siret</th>
                     <th>Raison sociale</th>
                     <th>N° rue</th>
@@ -24,7 +23,6 @@
                     <th>Contact</th>
                 </tr>
                 <tr v-for="(i,key) in infos" :key="key">
-                    <td>{{i.identreprise}}</td>
                     <td>{{i.siret}}</td>
                     <td>{{i.raisonsociale}}</td>
                     <td>{{i.norueentr}}</td>
