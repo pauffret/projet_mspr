@@ -5,8 +5,10 @@
             <h2>Infos demandes</h2>
         </div>
         <div>
-            <input type="number" v-model="noDemande" name="noDemande">
-            <button @click="recherche">Rechercher</button>
+            <div class="search">
+                <input type="number" v-model="noDemande" name="noDemande">
+                <button @click="recherche">Rechercher</button>
+            </div>
             <table>
                 <tr>
                     <th>N° tournée</th>
@@ -58,6 +60,10 @@
     h2{
         text-align: center;
         padding: 20px;
+    }
+    .search{
+        text-align: center;
+        padding-bottom: 20px;
     }
     table{
         margin: auto;
