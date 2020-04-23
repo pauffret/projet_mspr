@@ -141,6 +141,8 @@
                     </div>
                 </b-col>
             </b-row>
+            <br>
+            <p>Projet MSPR 2020 - Données et objects connectés, développé par DERRIEN Théo, CHAIGNEAU Paul, HAMON Axel, AUFFRET Pierre</p>
         </b-container>
     </div>
 </template>
@@ -198,7 +200,12 @@
     .btn-demande{
         position: absolute;
         bottom: 10px;
-        right: 10px;
+        left: 5%;
+        width: 90%;
+        box-shadow: 3px 2px #888888;
+    }
+    p{
+        text-align: center;
     }
 
 </style>
