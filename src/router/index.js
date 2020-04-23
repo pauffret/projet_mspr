@@ -5,6 +5,7 @@ import DemandeInfo from "@/views/DemandeInfo";
 import NbTourneesRealisees from "@/views/NbTourneesRealisees";
 import DemandeNonInscrite from "@/views/DemandeNonInscrite";
 import DemandeApresDate from "@/views/DemandeApresDate";
+import InfosEntreprise from "@/views/InfosEntreprise";
 
 Vue.use(VueRouter)
 
@@ -33,6 +34,12 @@ const routes = [
         path: '/demandeapresdate',
         name: 'DemandeApresDate',
         component: DemandeApresDate
+    }
+    ,
+    {
+        path: '/infosEntreprise',
+        name: 'InfosEntreprise',
+        component: InfosEntreprise
     }
 ]
 

@@ -2,7 +2,8 @@
     <div id="home">
         <div id="1">
             <b-card
-                    title="Card Title"
+                    title="Demandes faites après une date"
+                    style="grid-row: 1; grid-column: 1;"
                     class="card mb-2"
             >
                 <b-card-text>
@@ -15,6 +16,7 @@
         <div id="2">
             <b-card
                     title="Informations sur une demande"
+                    style="grid-row: 1; grid-column: 2;"
                     class="card mb-2"
             >
                 <b-card-text>
@@ -28,6 +30,7 @@
         <div id="3">
             <b-card
                     title="Card Title"
+                    style="grid-row: 1; grid-column: 3;"
                     class="card mb-2"
             >
                 <b-card-text>
@@ -40,6 +43,7 @@
         <div id="4">
             <b-card
                     title="Nombre de tournées par employé"
+                    style="grid-row: 2; grid-column: 1;"
                     class="card mb-2"
             >
                 <b-card-text>
@@ -52,7 +56,8 @@
         </div>
         <div id="5">
             <b-card
-                    title="Card Title"
+                    title="Entreprises ayant réalisé plus de demandes qu'une autre"
+                    style="grid-row: 2; grid-column: 2;"
                     class="card mb-2"
             >
                 <b-card-text>
@@ -66,6 +71,7 @@
         <div id="6">
             <b-card
                     title="Demandes non inscrites"
+                    style="grid-row: 2; grid-column: 3;"
                     class="card mb-2"
             >
                 <b-card-text>
@@ -97,7 +103,7 @@
                         this.$router.push({path: "/nbTourneesRealisees"})
                         break;
                     case '5':
-                        this.$router.push({path: "/"})
+                        this.$router.push({path: "/infosEntreprise"})
                         break;
                     case '6':
                         this.$router.push({path: "/demandenoninscrite"})
@@ -109,7 +115,13 @@
 </script>
 
 <style scoped>
+    #home{
+        display: grid;
+        grid-template-columns: 33% 33% 33%;
+        grid-template-rows: 33% 33% 33% ;
+    }
     .card{
-        max-width: 50rem;
+        max-width: 30rem;
+        margin: 15px auto auto;
     }
 </style>
