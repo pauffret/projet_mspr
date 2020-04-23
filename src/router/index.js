@@ -5,6 +5,7 @@ import DemandeInfo from "@/views/DemandeInfo";
 import NbTourneesRealisees from "@/views/NbTourneesRealisees";
 import DemandeNonInscrite from "@/views/DemandeNonInscrite";
 import DemandeApresDate from "@/views/DemandeApresDate";
+import QteRecupTypeDechet from "@/views/QteRecupTypeDechet";
 import InfosEntreprise from "@/views/InfosEntreprise";
 
 Vue.use(VueRouter)
@@ -34,6 +35,11 @@ const routes = [
         path: '/demandeapresdate',
         name: 'DemandeApresDate',
         component: DemandeApresDate
+    },
+    {
+        path: '/qterecuptypedechet',
+        name: 'QteRecupTypeDechet',
+        component: QteRecupTypeDechet
     }
     ,
     {

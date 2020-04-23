@@ -2,30 +2,22 @@
     <div>
         <button @click="redirectAccueil()" type="button" class="buttonAccueil btn btn-info">Accueil</button>
         <div class="title">
-            <h2>Demandes faites après une date</h2>
+            <h2>Quantité totale récupérée par type de déchet</h2>
         </div>
 
         <div>
             <div class="search">
-                <input type="date" v-model="dateDonnee" name="dateDonnee">
+                <input type="month" v-model="moisAnnee" name="moisAnnee">
                 <button @click="recherche">Rechercher</button>
             </div>
             <table>
                 <tr>
-                    <th>N° demande</th>
-                    <th>Date demande</th>
-                    <th>Date enlèvement prévu</th>
-                    <th>Id de l'entreprise</th>
-                    <th>N° de site</th>
-                    <th>Id état</th>
+                    <th>Type déchet</th>
+                    <th>Quantité enlevé</th>
                 </tr>
                 <tr v-for="(i,key) in infos" :key="key">
-                    <td>{{i.nodemande}}</td>
-                    <td>{{i.datedemande}}</td>
-                    <td>{{i.dateenlevementprevu}}</td>
-                    <td>{{i.identreprise}}</td>
-                    <td>{{i.nosite}}</td>
-                    <td>{{i.idetat}}</td>
+                    <td>{{i.nomtypedechet}}</td>
+                    <td>{{i.qteenlevee}}</td>
                 </tr>
             </table>
         </div>
@@ -36,10 +28,10 @@
     import axios from 'axios';
 
     export default {
-        name: "DemandeApresDate",
+        name: "QteRecupTypeDechet",
         data() {
             return {
-                dateDonnee: '',
+                moisAnnee: '',
                 infos: [],
                 errors: ''
             }
@@ -49,7 +41,7 @@
                 this.$router.push({path: "/"})
             },
             recherche: function () {
-                axios.get(`https://apex.oracle.com/pls/apex/myspacepc/recycl/1demandedate/` + this.dateDonnee)
+                axios.get(`https://apex.oracle.com/pls/apex/myspacepc/recycl/3quantiteMoisAnnee/` + this.moisAnnee.replace('-','_'))
                     .then(response => {
                         this.infos = response.data.items
                     })
