@@ -55,6 +55,22 @@
 </script>
 
 <style scoped>
+
+    .title {
+        margin-top: 30px;
+        grid-row: 1/2;
+        grid-column: 2/4;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .buttonAccueil {
+        margin: 5px;
+        width: 10%;
+    }
+
     h2{
         text-align: center;
         padding: 20px;
