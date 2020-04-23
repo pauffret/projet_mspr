@@ -2,6 +2,7 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
 import Resultat from "@/views/Resultat";
+import DemandeInfo from "@/views/DemandeInfo";
 import DemandeNonInscrite from "@/views/DemandeNonInscrite";
 
 Vue.use(VueRouter)
@@ -16,6 +17,11 @@ const routes = [
         path: '/resultat',
         name: 'Resultat',
         component: Resultat
+    },
+    {
+        path: '/demandeInfo',
+        name: 'DemandeInfo',
+        component: DemandeInfo
     },
     {
         path: '/demandenoninscrite',

@@ -94,7 +94,7 @@
                         this.$router.push({path: "/"})
                         break;
                     case '2':
-                        this.$router.push({path: "/"})
+                        this.$router.push({path: "/demandeInfo"})
                         break;
                     case '3':
                         this.$router.push({path: "/"})
