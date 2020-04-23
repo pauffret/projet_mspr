@@ -1,12 +1,12 @@
 <template>
     <div>
-        <button @click="redirectAccueil()" type="button" class="buttonAccueil btn btn-info">Accueil</button>
+        <button @click="redirectAccueil()" type="button" class="buttonAccueil btn btn-primary">Accueil</button>
         <div class="title">
             <h2>Nombre de tournées par employé</h2>
         </div>
         <div>
             <div class="search">
-                <input type="number" v-model="nbTournees" name="nbTournees">
+                <input type="number" v-model="nbTournees" name="nbTournees" min="0">
                 <button @click="recherche">Rechercher</button>
             </div>
             <table>

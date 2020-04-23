@@ -1,6 +1,6 @@
 <template>
     <div>
-        <button @click="redirectAccueil()" type="button" class="buttonAccueil btn btn-info">Accueil</button>
+        <button @click="redirectAccueil()" type="button" class="buttonAccueil btn btn-primary">Accueil</button>
         <div class="title">
             <h2>Demandes faites après une date</h2>
         </div>
@@ -15,17 +15,17 @@
                     <th>N° demande</th>
                     <th>Date demande</th>
                     <th>Date enlèvement prévu</th>
-                    <th>Id de l'entreprise</th>
-                    <th>N° de site</th>
-                    <th>Id état</th>
+                    <th>Nom de l'entreprise</th>
+                    <th>Nom du site</th>
+                    <th>Etat</th>
                 </tr>
                 <tr v-for="(i,key) in infos" :key="key">
                     <td>{{i.nodemande}}</td>
                     <td>{{i.datedemande}}</td>
                     <td>{{i.dateenlevementprevu}}</td>
-                    <td>{{i.identreprise}}</td>
-                    <td>{{i.nosite}}</td>
-                    <td>{{i.idetat}}</td>
+                    <td>{{i.raisonsociale}}</td>
+                    <td>{{i.nomsite}}</td>
+                    <td>{{i.libelleetat}}</td>
                 </tr>
             </table>
         </div>
