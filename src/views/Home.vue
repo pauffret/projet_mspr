@@ -85,7 +85,7 @@
             redirectList: function (page) {
                 switch (page) {
                     case '1':
-                        this.$router.push({path: "/"})
+                        this.$router.push({path: "/demandeapresdate"})
                         break;
                     case '2':
                         this.$router.push({path: "/demandeInfo"})

@@ -4,6 +4,7 @@ import Home from '../views/Home.vue'
 import DemandeInfo from "@/views/DemandeInfo";
 import NbTourneesRealisees from "@/views/NbTourneesRealisees";
 import DemandeNonInscrite from "@/views/DemandeNonInscrite";
+import DemandeApresDate from "@/views/DemandeApresDate";
 
 Vue.use(VueRouter)
 
@@ -27,6 +28,11 @@ const routes = [
         path: '/demandenoninscrite',
         name: 'DemandeNonInscrite',
         component: DemandeNonInscrite
+    },
+    {
+        path: '/demandeapresdate',
+        name: 'DemandeApresDate',
+        component: DemandeApresDate
     }
 ]
 
