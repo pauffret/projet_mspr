@@ -101,7 +101,8 @@
                                 class="card mb-2"
                         >
                             <b-card-text>
-                                ...
+                                Affiche la quantité totale
+                                collectée pour un type de déchet sur une période donnée au niveau d'un site.
                             </b-card-text>
 
                             <b-button class="btn-demande" @click="redirectList('7')" variant="primary">Accéder</b-button>
@@ -115,7 +116,8 @@
                                 class="card mb-2"
                         >
                             <b-card-text>
-                                ...
+                                Affiche la quantité
+                                totale collectée pour un type de déchet sur une période donnée au niveau national.
                             </b-card-text>
 
                             <b-button class="btn-demande" @click="redirectList('8')" variant="primary">Accéder</b-button>
