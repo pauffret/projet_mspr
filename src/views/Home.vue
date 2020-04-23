@@ -93,6 +93,36 @@
                     </div>
                 </b-col>
             </b-row>
+            <b-row>
+                <b-col>
+                    <div id="7">
+                        <b-card
+                                title="Quantité totale de déchêts par type et par site"
+                                class="card mb-2"
+                        >
+                            <b-card-text>
+                                ...
+                            </b-card-text>
+
+                            <b-button class="btn-demande" @click="redirectList('7')" variant="primary">Accéder</b-button>
+                        </b-card>
+                    </div>
+                </b-col>
+                <b-col>
+                    <div id="8">
+                        <b-card
+                                title="Quantité totale de déchêts par type pour tous les sites"
+                                class="card mb-2"
+                        >
+                            <b-card-text>
+                                ...
+                            </b-card-text>
+
+                            <b-button class="btn-demande" @click="redirectList('8')" variant="primary">Accéder</b-button>
+                        </b-card>
+                    </div>
+                </b-col>
+            </b-row>
         </b-container>
     </div>
 </template>
