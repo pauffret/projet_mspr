@@ -1,6 +1,6 @@
 <template>
     <div>
-        <button @click="redirectAccueil()" type="button" class="buttonAccueil btn btn-info">Accueil</button>
+        <button @click="redirectAccueil()" type="button" class="buttonAccueil btn btn-primary">Accueil</button>
         <div class="title">
             <h2>Demandes faites après une date</h2>
         </div>

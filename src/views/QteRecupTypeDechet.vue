@@ -1,6 +1,6 @@
 <template>
     <div>
-        <button @click="redirectAccueil()" type="button" class="buttonAccueil btn btn-info">Accueil</button>
+        <button @click="redirectAccueil()" type="button" class="buttonAccueil btn btn-primary">Accueil</button>
         <div class="title">
             <h2>Quantité totale récupérée par type de déchet</h2>
         </div>

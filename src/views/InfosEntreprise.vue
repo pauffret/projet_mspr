@@ -1,6 +1,6 @@
 <template>
     <div>
-        <button @click="redirectAccueil()" type="button" class="buttonAccueil btn btn-info">Accueil</button>
+        <button @click="redirectAccueil()" type="button" class="buttonAccueil btn btn-primary">Accueil</button>
         <div class="title">
             <h2>Informations des entreprises ayant réalisé plus de demandes qu'une autre</h2>
         </div>
