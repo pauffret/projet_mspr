@@ -25,4 +25,12 @@
   .navbar-expand {
     justify-content: center !important;
   }
+  .buttonAccueil {
+    width: 8% !important;
+    box-shadow: 3px 2px #9cb5f8f7 !important;
+  }
+  table{
+    box-shadow: 3px -2px #0055ff4a;
+  }
+
 </style>
