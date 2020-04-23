@@ -6,7 +6,7 @@
         </div>
         <div>
             <div class="search">
-                <input type="number" v-model="nbTournees" name="nbTournees">
+                <input type="number" v-model="nbTournees" name="nbTournees" min="0">
                 <button @click="recherche">Rechercher</button>
             </div>
             <table>
