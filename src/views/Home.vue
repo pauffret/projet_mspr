@@ -75,10 +75,36 @@
                     class="card mb-2"
             >
                 <b-card-text>
-                    Affichez les informations des demandes qui ne sont pas encore inscrites dans une tournée.
+                    ...
                 </b-card-text>
 
                 <b-button @click="redirectList('6')" variant="primary">Go somewhere</b-button>
+            </b-card>
+        </div>
+        <div id="7">
+            <b-card
+                    title="Quantité de déchêts par type et par site"
+                    style="grid-row: 3; grid-column: 1;"
+                    class="card mb-2"
+            >
+                <b-card-text>
+                    ...
+                </b-card-text>
+
+                <b-button @click="redirectList('7')" variant="primary">Go somewhere</b-button>
+            </b-card>
+        </div>
+        <div id="8">
+            <b-card
+                    title="Quantité de déchêts par type pour tous les sites"
+                    style="grid-row: 3; grid-column: 2;"
+                    class="card mb-2"
+            >
+                <b-card-text>
+                    Affichez les informations des demandes qui ne sont pas encore inscrites dans une tournée.
+                </b-card-text>
+
+                <b-button @click="redirectList('8')" variant="primary">Go somewhere</b-button>
             </b-card>
         </div>
     </div>
@@ -107,6 +133,15 @@
                         break;
                     case '6':
                         this.$router.push({path: "/demandenoninscrite"})
+                        break;
+                    case '7':
+                        this.$router.push({path: "/quantiteDechetsSite"})
+                        break;
+                    case '8':
+                        this.$router.push({path: "/quantiteDechetsNational"})
+                        break;
+                    case '9':
+                        this.$router.push({path: "/"})
                         break;
                 }
             }
